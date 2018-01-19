@@ -470,6 +470,11 @@ namespace Elpis
                 LaunchAmazonURL(_currMenuSong.AmazonTrackID);
             }
         }
+        
+        public void SaveSong(string fileName)
+        {
+            _player.SaveSong(fileName);
+        }
 
         private void seekToPosition(object sender, MouseEventArgs e)
         {
